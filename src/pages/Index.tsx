@@ -382,7 +382,7 @@ const Index = () => {
       <section id="clientes" className="section-padding bg-white">
         <div className="container-custom">
           <AnimatedSection className="text-center max-w-3xl mx-auto mb-12">
-            <h2 className="section-title">Empresas que Confiam em Nosso Trabalho</h2>
+            <h2 className="section-title">Alguns de nossos clientes</h2>
             <p className="text-muted-foreground">
               Clientes satisfeitos com a qualidade e eficiência dos nossos serviços
             </p>
