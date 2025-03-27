@@ -139,6 +139,20 @@ const Index = () => {
     }
   ];
 
+  // Client testimonials data
+  const clients = [
+    {
+      name: "GOLDEN GATE CLUB CONDOMINIUM",
+      description: "O Golden Gate Club Condominium um dos condomínios mais luxuosos de Nova Iguaçu, com 2 blocos de 22 pavimentos.",
+      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070"
+    },
+    {
+      name: "BORA BORA HILLS FREGUESIA",
+      description: "Bora Bora um lindíssimo empreendimento em Jacarepaguá com 7 pavimentos e 3 blocos.",
+      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?q=80&w=2070"
+    }
+  ];
+
   return (
     <div className="min-h-screen bg-background">
       <Header />
@@ -334,15 +348,35 @@ const Index = () => {
             </p>
           </AnimatedSection>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {[...Array(5)].map((_, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {clients.map((client, index) => (
               <AnimatedSection 
                 key={index} 
+                className="card overflow-hidden flex flex-col h-full"
+                delay={index * 150}
+              >
+                <div className="aspect-video overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src={client.image} 
+                    alt={client.name} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+                <h3 className="text-xl font-bold mb-2">{client.name}</h3>
+                <p className="text-muted-foreground">{client.description}</p>
+              </AnimatedSection>
+            ))}
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+            {[...Array(3)].map((_, index) => (
+              <AnimatedSection 
+                key={`extra-${index}`} 
                 className="aspect-[3/2] bg-secondary rounded-lg flex items-center justify-center p-6"
-                delay={index * 100}
+                delay={(index + 2) * 100}
               >
                 <div className="text-muted-foreground font-medium text-lg">
-                  Cliente {index + 1}
+                  Cliente {index + 3}
                 </div>
               </AnimatedSection>
             ))}

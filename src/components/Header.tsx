@@ -39,9 +39,11 @@ const Header = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
-          <h1 className="text-xl font-bold tracking-tighter">
-            DIAS <span className="text-muted-foreground">VERTYKAIS</span>
-          </h1>
+          <img 
+            src="/lovable-uploads/fbc63dd3-4839-4095-a11c-e2457b5f7a31.png" 
+            alt="Dias Vertykais" 
+            className="h-12 w-auto" 
+          />
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">
@@ -49,7 +51,8 @@ const Header = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-foreground opacity-80 hover:opacity-100 transition-opacity"
+              className={`text-sm font-medium transition-opacity
+                ${scrolled ? "text-foreground opacity-80 hover:opacity-100" : "text-white opacity-80 hover:opacity-100"}`}
             >
               {item.label}
             </a>
@@ -60,7 +63,8 @@ const Header = () => {
           href={whatsappLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="hidden md:block cta-button text-sm"
+          className={`hidden md:block cta-button text-sm
+            ${scrolled ? "" : "bg-white/10 backdrop-blur-sm text-white hover:bg-white/20"}`}
         >
           Agende Visita Técnica
         </a>
