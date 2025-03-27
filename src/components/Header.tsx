@@ -40,9 +40,9 @@ const Header = () => {
       <div className="container-custom flex items-center justify-between">
         <div className="flex items-center">
           <img 
-            src={scrolled ? "/lovable-uploads/fbc63dd3-4839-4095-a11c-e2457b5f7a31.png" : "/lovable-uploads/logo-white.png"}
+            src="/lovable-uploads/logo-white.png"
             alt="Dias Vertykais" 
-            className="h-14 w-auto" 
+            className={`h-16 w-auto transition-all duration-300 ${scrolled ? "filter invert" : ""}`}
           />
         </div>
         

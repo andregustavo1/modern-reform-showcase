@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/Header";
 import AnimatedSection from "../components/ui/AnimatedSection";
@@ -20,7 +19,7 @@ import {
 
 const Index = () => {
   // WhatsApp URL
-  const whatsappUrl = "https://wa.me/5521975878855";
+  const whatsappLink = "https://wa.me/5521975878855";
 
   // Animation on scroll effect
   useEffect(() => {
@@ -217,7 +216,7 @@ const Index = () => {
               Soluções Completas para Manutenção e Estética Predial
             </p>
             <a 
-              href={whatsappUrl}
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button inline-flex items-center gap-2 text-base"
@@ -443,7 +442,7 @@ const Index = () => {
               
               <div className="space-y-6">
                 <a 
-                  href={whatsappUrl} 
+                  href={whatsappLink} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex items-center gap-3 hover:opacity-80 transition-opacity"
@@ -521,7 +520,7 @@ const Index = () => {
               Transforme Sua Propriedade Hoje
             </h2>
             <a 
-              href={whatsappUrl}
+              href={whatsappLink}
               target="_blank"
               rel="noopener noreferrer"
               className="cta-button inline-flex items-center gap-2 bg-white text-black hover:bg-gray-100"
@@ -542,7 +541,7 @@ const Index = () => {
                 <img 
                   src="/lovable-uploads/logo-white.png" 
                   alt="Dias Vertykais" 
-                  className="h-16 w-auto" 
+                  className="h-16 w-auto filter invert" 
                 />
               </div>
               <p className="text-gray-400 max-w-md">
@@ -568,7 +567,7 @@ const Index = () => {
                 <ul className="space-y-2">
                   <li>
                     <a 
-                      href={whatsappUrl} 
+                      href={whatsappLink} 
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white transition-colors"
