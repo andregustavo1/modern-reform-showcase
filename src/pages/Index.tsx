@@ -1,3 +1,4 @@
+
 import { useEffect } from "react";
 import Header from "../components/Header";
 import AnimatedSection from "../components/ui/AnimatedSection";
@@ -150,6 +151,46 @@ const Index = () => {
       name: "BORA BORA HILLS FREGUESIA",
       description: "Bora Bora um lindíssimo empreendimento em Jacarepaguá com 7 pavimentos e 3 blocos.",
       image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO METRÓPOLIS",
+      description: "O Edifício METRÓPOLIS é um centro comercial em Nova Iguaçu com 20 pavimentos.",
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO POTIGUARA 325",
+      description: "O Condomínio Edifício Potiguara 325 é um charmoso condomínio na Freguesia com 8 pavimentos.",
+      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO PALAZZO VENETO",
+      description: "Um condomínio que carrega a tradicional característica do bairro Recreio dos Bandeirantes com 3 pavimentos de pura elegância.",
+      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070"
+    },
+    {
+      name: "RESIDENCIAL PORTAL DO BOSQUE",
+      description: "Um condomínio residencial em Jardim Sulacap com 2 blocos de 12 pavimentos.",
+      image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO QUARTO CENTENÁRIO",
+      description: "Um condomínio no bairro da Tijuca, bairro nobre da zona norte com 10 pavimentos.",
+      image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO FÁBIO RIBEIRO",
+      description: "O Condomínio Edifício Fábio Ribeiro na Tijuca com 11 pavimentos de muita elegância.",
+      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO COSENZA",
+      description: "Condomínio residencial com 10 pavimentos na nossa nobre Tijuca.",
+      image: "https://images.unsplash.com/photo-1560448075-57d0285fc80b?q=80&w=2070"
+    },
+    {
+      name: "EDIFÍCIO MARIA JOSÉ",
+      description: "O Condomínio Edifício Maria José no nosso querido Bairro do Méier com 6 pavimentos.",
+      image: "https://images.unsplash.com/photo-1565402170291-8491f14678db?q=80&w=2070"
     }
   ];
 
@@ -348,12 +389,12 @@ const Index = () => {
             </p>
           </AnimatedSection>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {clients.map((client, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {clients.slice(0, 6).map((client, index) => (
               <AnimatedSection 
                 key={index} 
                 className="card overflow-hidden flex flex-col h-full"
-                delay={index * 150}
+                delay={index * 100}
               >
                 <div className="aspect-video overflow-hidden rounded-lg mb-4">
                   <img 
@@ -368,16 +409,22 @@ const Index = () => {
             ))}
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-            {[...Array(3)].map((_, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
+            {clients.slice(6).map((client, index) => (
               <AnimatedSection 
                 key={`extra-${index}`} 
-                className="aspect-[3/2] bg-secondary rounded-lg flex items-center justify-center p-6"
-                delay={(index + 2) * 100}
+                className="card overflow-hidden flex flex-col h-full"
+                delay={(index + 6) * 100}
               >
-                <div className="text-muted-foreground font-medium text-lg">
-                  Cliente {index + 3}
+                <div className="aspect-video overflow-hidden rounded-lg mb-4">
+                  <img 
+                    src={client.image} 
+                    alt={client.name} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
                 </div>
+                <h3 className="text-xl font-bold mb-2">{client.name}</h3>
+                <p className="text-muted-foreground">{client.description}</p>
               </AnimatedSection>
             ))}
           </div>
@@ -491,7 +538,13 @@ const Index = () => {
         <div className="container-custom">
           <div className="grid md:grid-cols-2 gap-12 mb-12">
             <div>
-              <h2 className="text-2xl font-bold mb-4">DIAS VERTYKAIS</h2>
+              <div className="mb-4">
+                <img 
+                  src="/lovable-uploads/logo-white.png" 
+                  alt="Dias Vertykais" 
+                  className="h-16 w-auto" 
+                />
+              </div>
               <p className="text-gray-400 max-w-md">
                 Reforma Predial LTDA. Especialistas em reforma e estética predial, 
                 oferecendo soluções completas para manutenção de fachadas, impermeabilização, 
