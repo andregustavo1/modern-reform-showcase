@@ -42,7 +42,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/logo-white.png"
             alt="Dias Vertykais" 
-            className={`h-16 w-auto transition-all duration-300 ${scrolled ? "filter invert" : ""}`}
+            className={`h-16 w-auto transition-all duration-300 ${scrolled ? "" : "filter invert"}`}
           />
         </div>
         
