@@ -144,52 +144,52 @@ const Index = () => {
     {
       name: "GOLDEN GATE CLUB CONDOMINIUM",
       description: "O Golden Gate Club Condominium um dos condomínios mais luxuosos de Nova Iguaçu, com 2 blocos de 22 pavimentos.",
-      image: "https://images.unsplash.com/photo-1487958449943-2429e8be8625?q=80&w=2070"
+      image: "/images/image.png"
     },
     {
       name: "BORA BORA HILLS FREGUESIA",
       description: "Bora Bora um lindíssimo empreendimento em Jacarepaguá com 7 pavimentos e 3 blocos.",
-      image: "https://images.unsplash.com/photo-1524230572899-a752b3835840?q=80&w=2070"
+      image: "/images/image copy.png"
     },
     {
       name: "EDIFÍCIO METRÓPOLIS",
       description: "O Edifício METRÓPOLIS é um centro comercial em Nova Iguaçu com 20 pavimentos.",
-      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070"
+      image: "/images/2.png"
     },
     {
       name: "EDIFÍCIO POTIGUARA 325",
       description: "O Condomínio Edifício Potiguara 325 é um charmoso condomínio na Freguesia com 8 pavimentos.",
-      image: "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070"
+      image: "/images/3.png"
     },
     {
       name: "EDIFÍCIO PALAZZO VENETO",
       description: "Um condomínio que carrega a tradicional característica do bairro Recreio dos Bandeirantes com 3 pavimentos de pura elegância.",
-      image: "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?q=80&w=2070"
+      image: "/images/4.png"
     },
     {
       name: "RESIDENCIAL PORTAL DO BOSQUE",
       description: "Um condomínio residencial em Jardim Sulacap com 2 blocos de 12 pavimentos.",
-      image: "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?q=80&w=2070"
+      image: "/images/5.png"
     },
     {
       name: "EDIFÍCIO QUARTO CENTENÁRIO",
       description: "Um condomínio no bairro da Tijuca, bairro nobre da zona norte com 10 pavimentos.",
-      image: "https://images.unsplash.com/photo-1464082354059-27db6ce50048?q=80&w=2070"
+      image: "/images/6.png"
     },
     {
       name: "EDIFÍCIO FÁBIO RIBEIRO",
       description: "O Condomínio Edifício Fábio Ribeiro na Tijuca com 11 pavimentos de muita elegância.",
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2070"
+      image: "/images/7.png"
     },
     {
       name: "EDIFÍCIO COSENZA",
       description: "Condomínio residencial com 10 pavimentos na nossa nobre Tijuca.",
-      image: "https://images.unsplash.com/photo-1560448075-57d0285fc80b?q=80&w=2070"
+      image: "/images/8.png"
     },
     {
       name: "EDIFÍCIO MARIA JOSÉ",
       description: "O Condomínio Edifício Maria José no nosso querido Bairro do Méier com 6 pavimentos.",
-      image: "https://images.unsplash.com/photo-1565402170291-8491f14678db?q=80&w=2070"
+      image: "/images/10.png"
     }
   ];
 
