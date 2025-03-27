@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Header from "../components/Header";
 import AnimatedSection from "../components/ui/AnimatedSection";
@@ -10,10 +9,9 @@ import {
   User, 
   FileText, 
   CheckCircle, 
-  Tool,
+  Wrench,
   Droplet,
   Building,
-  Wrench,
   Ruler,
   FileCheck,
   ArrowRight
@@ -72,7 +70,7 @@ const Index = () => {
       description: "Tratamento e pintura especializada para pavimentos"
     },
     {
-      icon: <Tool size={28} />,
+      icon: <Wrench size={28} />,
       title: "Teste de Percussão",
       description: "Diagnóstico de áreas deterioradas em fachadas"
     },
